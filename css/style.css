@@ -1,9 +1,17 @@
 *, *::after, *::before {
     box-sizing: border-box;
   }
+body {
+  font-family: "Unbounded";
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+}
 .wrapper {
-    overflow-x: hidden;
+    overflow: hidden;
+    max-width: 1260px;
     padding: 0 30px;
+    margin: 0 auto;
 }
 a {
     color: inherit;
