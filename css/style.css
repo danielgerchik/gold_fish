@@ -309,8 +309,10 @@ a {
   .firstscreen__bot {
     position: relative;
     z-index: 10;
-    left: 0;
-    top: 86%;
+    max-width: 1240px;
+    padding: 0px 20px;
+    margin: 0 auto;
+    bottom: 70px;
   }
   .firstscreen__items {
     display: flex;
@@ -322,7 +324,7 @@ a {
     border-radius: 35px;
     padding: 20px 30px;
     height: auto;
-    flex: 1 0 33.33%;
+    flex: 1 1 33.33%;
   }
   .firstscreen__item:not(:last-child) {
     margin-right: 24px;
@@ -394,14 +396,7 @@ a {
   right: -3%;
   width: 450px;
 }
-  }
 .firstscreen__item {
-  /* width: 1000px; */
+  flex: 1 0 70%;
 }
-  .swiper {
-    /* overflow: visible; */
-}
-.firstscreen__bot {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+  }

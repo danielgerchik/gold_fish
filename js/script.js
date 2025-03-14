@@ -10,5 +10,11 @@ new Swiper(".swiper", {
     spaceBetween: 0, // Отступы между слайдами
     freeMode: true, // Включаем свободный режим
     freeModeSticky: false, // Отключаем "прилипание" слайдов
-    grabCursor: true // Делаем курсор "рукой"
+    grabCursor: true, // Делаем курсор "рукой"
+    enabled: true,
+    breakpoints: {
+        850: {
+            enabled: false // Включается на экранах <= 850px
+        }
+    }
 });
