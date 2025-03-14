@@ -38,10 +38,9 @@
     <meta name="theme-color" content="#ffffff">
     <!-- CSS -->
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- JS (отложенная загрузка) -->
-    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -133,34 +132,40 @@
                         Компания "Золотая рыбка" занимается обслуживанием аквариумов в офисах Новосибирска и на дому с 2006 года
                     </div>
                     <button class="firstscreen__button btn">Заказать</button>
-                    <div class="firstscreen__items">
-                        <div class="firstscreen__item">
-                            <div class="firstscreen__label"><span>Уход и чистка</span><br><span>аквариумов</span></div>
-                            <div class="firstscreen__item-text">
-                                Предлагаем услуги по чистке аквариума, включая замену воды в аквариумах с живыми растениями, очистку декораций и оборудования, а также консультации по уходу за рыбками и растениями.
-                            </div>
-                        </div>
-                        <div class="firstscreen__item">
-                            <div class="firstscreen__label"><span>Оформление</span><br><span>аквариума</span></div>
-                            <div class="firstscreen__item-text">
-                                Поможем с красивым оформлением аквариума живыми и искусственными растениями, камнями и пр.
-                            </div>
-                        </div>
-                        <div class="firstscreen__item">
-                            <div class="firstscreen__label">
-                                <span>Обслуживание</span><br>
-                                <span>аквариумов любых</span><br> 
-                                <span>размеров</span>
-                            </div>
-                            <div class="firstscreen__item-text">
-                                От совсем небольших, "домашних", на 30 литров, так и более объемных, на 200 литров и более.
-                            </div>
-                        </div>
-                    </div>
                     <img src="img/main/main.png" alt="" class="firstscreen__img-fish">
                 </div>
             </div>
+            <div class="firstscreen__bot">
+                <div class="firstscreen__swiper swiper">
+            <div class="firstscreen__items swiper-wrapper">
+                <div class="firstscreen__item swiper-slide">
+                    <div class="firstscreen__label"><span>Уход и чистка</span><br><span>аквариумов</span></div>
+                    <div class="firstscreen__item-text">
+                        Предлагаем услуги по чистке аквариума, включая замену воды в аквариумах с живыми растениями, очистку декораций и оборудования, а также консультации по уходу за рыбками и растениями.
+                    </div>
+                </div>
+                <div class="firstscreen__item swiper-slide">
+                    <div class="firstscreen__label"><span>Оформление</span><br><span>аквариума</span></div>
+                    <div class="firstscreen__item-text">
+                        Поможем с красивым оформлением аквариума живыми и искусственными растениями, камнями и пр.
+                    </div>
+                </div>
+                <div class="firstscreen__item swiper-slide">
+                    <div class="firstscreen__label">
+                        <span>Обслуживание</span><br>
+                        <span>аквариумов любых</span><br> 
+                        <span>размеров</span>
+                    </div>
+                    <div class="firstscreen__item-text">
+                        От совсем небольших, "домашних", на 30 литров, так и более объемных, на 200 литров и более.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
         </div>
     </main>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

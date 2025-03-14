@@ -32,6 +32,8 @@ a {
   /* Header */
 
   .header {
+    position: relative;
+    z-index: 100;
     padding-top: 5px;
     font-weight: 500;
   }
@@ -304,20 +306,23 @@ a {
   .firstscreen__button:hover {
     opacity: .7;
   }
-  .firstscreen__items {
-    position: absolute;
+  .firstscreen__bot {
+    position: relative;
     z-index: 10;
     left: 0;
     top: 86%;
+  }
+  .firstscreen__items {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
   }
   .firstscreen__item {
-    flex: 1 1 33.33%;
     background-color: #F2F4F9;
     border-radius: 35px;
     padding: 20px 30px;
+    height: auto;
+    flex: 1 0 33.33%;
   }
   .firstscreen__item:not(:last-child) {
     margin-right: 24px;
@@ -390,3 +395,13 @@ a {
   width: 450px;
 }
   }
+.firstscreen__item {
+  /* width: 1000px; */
+}
+  .swiper {
+    /* overflow: visible; */
+}
+.firstscreen__bot {
+  max-width: 1200px;
+  margin: 0 auto;
+}

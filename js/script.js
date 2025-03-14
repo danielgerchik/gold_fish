@@ -4,3 +4,11 @@ burger.addEventListener('click', () => {
   burger.classList.toggle('active');
   menu.classList.toggle('active');
 });
+// swiper 
+new Swiper(".swiper", {
+    slidesPerView: "auto", // Слайды не сжимаются
+    spaceBetween: 0, // Отступы между слайдами
+    freeMode: true, // Включаем свободный режим
+    freeModeSticky: false, // Отключаем "прилипание" слайдов
+    grabCursor: true // Делаем курсор "рукой"
+});
