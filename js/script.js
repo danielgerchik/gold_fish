@@ -13,7 +13,7 @@ new Swiper(".swiper", {
     grabCursor: true, // Делаем курсор "рукой"
     enabled: true,
     breakpoints: {
-        850: {
+        851: {
             enabled: false // Включается на экранах <= 850px
         }
     }
