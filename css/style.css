@@ -215,7 +215,7 @@ a {
   padding: 20px 0px;
 }
 .header__menu {
-  background-color: rgb(245, 245, 245);
+  background-color: #F2F4F9;
   position: absolute;
   top: 84px;
   left: 0;
@@ -255,6 +255,96 @@ a {
       display: none;  
      }
      .header__list-contacts-link {
-      padding: 10px 30px;
+      padding: 10px 25px;
   }
+  }
+   /* Firstscreen */
+
+   .firstscreen {
+    padding: 40px 0px 220px 0px;
+  }
+  .firstscreen__wrapper {
+  }
+  .wrapper {
+  }
+  .firstscreen__content {
+    position: relative;
+    padding: 40px 40px 120px 40px;
+    background: var(--black) url("../img/main/bg.png") no-repeat center / cover;
+    border-radius: 35px;
+  }
+  .firstscreen__title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+  }
+  .firstscreen__description {
+    font: 16px;
+    max-width: 450px;
+    margin-bottom: 48px;
+    line-height: 1.4;
+  }
+  .firstscreen__button {
+    font-family: "Unbounded";
+    font-weight: 500;
+    font-size: 24px;
+    color: #fff;
+    padding: 10px 30px;
+    background-color: #5462FF;
+    border-radius: 15px;
+  }
+  .firstscreen__items {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  .firstscreen__item {
+    flex: 1 1 33.33%;
+    background-color: #F2F4F9;
+    border-radius: 35px;
+    padding: 20px 30px;
+  }
+  .firstscreen__item:not(:last-child) {
+    margin-right: 24px;
+  }
+  .firstscreen__label {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .firstscreen__label span {
+    display: inline-block;
+    background-color: var(--orange);
+    border-bottom-right-radius: 10px;
+    padding: 0px 15px 5px 15px;
+  }
+  .firstscreen__label span:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px 20px 5px 15px;
+  }
+  .firstscreen__label span:last-child {
+    padding: 0px 15px 10px 15px;
+    border-bottom-left-radius: 10px;
+  }
+  .firstscreen__label span:not(:first-child ){
+    
+  }
+  .firstscreen__item:last-child .firstscreen__label span:first-child {
+    border-bottom-right-radius: 0px;
+  }
+  .firstscreen__item:last-child .firstscreen__label span:nth-of-type(2) {
+    padding: 5px 20px 5px 15px;
+  }
+  .firstscreen__item:last-child .firstscreen__label span:not(:last-child) {
+    border-top-right-radius: 10px; 
+  }
+  .firstscreen__item-text {
+    font-weight: 300;
+    color: var(--black);
+    line-height: 1.2;
   }
