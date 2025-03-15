@@ -758,3 +758,8 @@ a {
     right: 30px;
 }
 }
+/* Bottom */
+.bottom {
+  height: 1000px;
+  background: url(../img/footer.png) no-repeat center / cover;
+}

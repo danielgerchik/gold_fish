@@ -20,12 +20,15 @@ new Swiper(".swiper", {
 });
 // popup
 const popup = document.querySelector(".order-popup");
-const openPopup = document.querySelector(".firstscreen__button");
+const openPopups = document.querySelectorAll(".btn");
 const closePopup = document.querySelector(".order-popup__exit-img");
 
-openPopup.addEventListener("click", () => {
-    popup.classList.add("active");
-});
+    openPopups.forEach(btn => {
+        btn.addEventListener("click", () => {
+            popup.classList.add("active");
+        })  
+    })
+
 
 closePopup.addEventListener("click", () => {
     popup.classList.remove("active");
