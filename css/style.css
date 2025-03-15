@@ -6,7 +6,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   color: #fff;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .wrapper {
     max-width: 1240px;
@@ -263,7 +263,7 @@ a {
    /* Firstscreen */
 
    .firstscreen {
-    padding: 40px 0px 220px 0px;
+    padding: 40px 0px 20px 0px;
   }
   .firstscreen__wrapper {
   }
@@ -454,3 +454,102 @@ a {
   flex: 1 0 80%;
 }
 }
+/* About */
+
+.about {
+}
+.about__wrapper {
+}
+.wrapper {
+}
+.about__title {
+  font-weight: 600;
+  font-size: 32px;
+  color: var(--black);
+  margin-bottom: 48px;
+}
+.about__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0px -15px;
+}
+.about__item-wrap {
+  padding: 0px 15px;
+  min-height: 208px;
+  margin-bottom: 24px;
+}
+.about__item-wrap.about__item-wrap-big {
+  flex: 1 1 57%;
+}
+.about__item-wrap.about__item-wrap-small {
+  flex: 1 1 41%;
+}
+.about__item {
+  position: relative;
+  border-radius: 35px;
+  height: 100%;
+  padding: 30px;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.about__item-wrap.about__item-wrap-big .about__item {
+  padding-left: 280px;
+  background-color: #5462FF;
+}
+.about__item-wrap.about__item-wrap-big:first-child .about__item {
+  background-color: var(--black);
+}
+.about__item-wrap.about__item-wrap-big:nth-child(5) .about__item {
+  background: linear-gradient(to right, #5462FF 30%, #111732 70%);
+}
+.about__item-wrap.about__item-wrap-small .about__item {
+  padding-left: 204px;
+  background-color: var(--orange);
+}
+.about__item-wrap.about__item-wrap-small .about__label {
+  padding: 0px;
+  background-color: transparent;
+  border-radius: 0px;
+}
+.about__label {
+  position: relative;
+  z-index: 5;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: var(--orange);
+  border-radius: 10px;
+  line-height: 1.2;
+}
+.about__text {
+  position: relative;
+  z-index: 5;
+  max-width: 370px;
+  line-height: 1.2;
+}
+.about__item-wrap.about__item-wrap-small .about__item .about__text {
+  max-width: 205px;
+}
+.about__bg-img {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+}
+.about__item-wrap:nth-child(1) .about__bg-img {
+ height: 100%;
+}
+.about__item-wrap:nth-child(3) .about__bg-img {
+  bottom: -32px;
+  left: -36px;
+}
+.about__item-wrap:nth-child(4) .about__bg-img {
+  bottom: 13px;
+  left: -25px;
+}
+
