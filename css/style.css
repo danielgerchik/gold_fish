@@ -1183,10 +1183,12 @@ a {
 }
 .footer__content span {
   display: inline-block;
-  line-height: 1.5;
+}
+.footer__content span:first-of-type{
+  margin-bottom: 10px;
 }
 .footer__content span:last-of-type{
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 .footer__content a {
   align-self: flex-start;
