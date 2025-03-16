@@ -25,11 +25,11 @@ new Swiper(".price__swiper", {
     freeModeSticky: false, // Отключаем "прилипание" слайдов
     grabCursor: true, // Делаем курсор "рукой"
     enabled: true,
-    breakpoints: {
-        851: {
-            enabled: false 
-        }
-    }
+    // breakpoints: {
+    //     851: {
+    //         enabled: false 
+    //     }
+    // }
 });
 // popup
 const popup = document.querySelector(".order-popup");
