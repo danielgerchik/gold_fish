@@ -931,7 +931,14 @@ a {
 }
 }
 @media screen and (max-width: 850px) {
-  .price__wrapper {
+  .price__bot-text {
+    font-size: 13px;
+}
+  .price__caption {
+    padding: 30px 30px 0px 30px;
+}
+  .price__table {
+    margin: 0px -20px;
     padding: 0px;
   }
   .price__table {
@@ -1023,6 +1030,12 @@ a {
   }
 }
 @media screen and (max-width: 500px) {
+  .price__caption {
+    padding: 30px 15px 0px 15px;
+}
+  .price__table {
+    margin: 0px -15px;
+  }
   .price__item_static {
     padding-left: 15px;
 }
@@ -1038,6 +1051,12 @@ a {
 .price__swiper .price__item {
   flex: 1 0 85%;
 }
+}
+@media screen and (max-width: 380px) {
+  .price__title {
+    font-size: 8vw;
+  }
+ 
 }
 @media screen and (max-width: 374px) {
   .price__swiper .price__text {
