@@ -14,7 +14,20 @@ new Swiper(".firstscreen__swiper", {
     enabled: true,
     breakpoints: {
         851: {
-            enabled: false // Включается на экранах <= 850px
+            enabled: false 
+        }
+    }
+});
+new Swiper(".price__swiper", {
+    slidesPerView: "auto", // Слайды не сжимаются
+    spaceBetween: 5, // Отступы между слайдами
+    freeMode: true, // Включаем свободный режим
+    freeModeSticky: false, // Отключаем "прилипание" слайдов
+    grabCursor: true, // Делаем курсор "рукой"
+    enabled: true,
+    breakpoints: {
+        851: {
+            enabled: false 
         }
     }
 });
