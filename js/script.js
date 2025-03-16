@@ -20,16 +20,21 @@ new Swiper(".firstscreen__swiper", {
 });
 new Swiper(".price__swiper", {
     slidesPerView: "auto", // Слайды не сжимаются
-    spaceBetween: 0, // Отступы между слайдами
+    spaceBetween: 10, // Отступы между слайдами
     freeMode: true, // Включаем свободный режим
     freeModeSticky: false, // Отключаем "прилипание" слайдов
     grabCursor: true, // Делаем курсор "рукой"
     enabled: true,
-    // breakpoints: {
-    //     851: {
-    //         enabled: false 
-    //     }
-    // }
+    breakpoints: {
+        851: {
+            enabled: false 
+        }
+    },
+    on: {
+        setTranslate(swiper, translate) {
+          swiper.wrapperEl.style.transform = `translate3d(${translate + 10}px, 0px, 0px)`;
+        }
+      }
 });
 // popup
 const popup = document.querySelector(".order-popup");
