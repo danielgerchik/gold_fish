@@ -59,3 +59,22 @@ popup.addEventListener("click", (e) => {
         popup.classList.remove("active");
     }
 });
+
+// ScrollTO
+document.querySelectorAll('.header__list-item a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      burger.classList.remove('active');
+      menu.classList.remove('active');
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+  
