@@ -782,9 +782,10 @@ a {
   margin-bottom: 48px;
 }
 .price__table {
+  position: relative;
   color: var(--black);
   background-color: #fff;
-  padding: 40px 0px 25px 0px;
+  padding: 0px 0px 25px 0px;
   border-radius: 35px;
   border-bottom-left-radius: 0px;
 }
@@ -798,28 +799,76 @@ a {
 .price__label {
   position: relative;
   font-weight: 600;
-  font-size: 16px;
-  height: 51px;
+  top: 0px;
+  left: 0;
+  height: 94px;
+  padding: 0px 50px 0px 30px;
+  display: flex;
+  align-items: center;
 }
-.price__label::after {
+.price__table::before {
   content: "";
   position: absolute;
-  bottom: 0px;
+  z-index: 10;
+  top: 94px;
   left: 0;
   width: 100%;
   height: 0.5px;
   background-color: var(--gray);
 }
-.price__item_static .price__label{
-  padding-left: 35px;
-}
-.price__swiper .price__item:last-child .price__label{
-  padding-right: 35px;
+.price__label::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0;
+  height: 100%;
+  width: 1px;
+  background-color: #ECEEF3;
 }
 .price__swiper .price__item {
   flex: 1 0 33.333%;
 }
 .price__text {
+  position: relative;
+  font-size: 16px;
+  height: 77px;
+  display: flex;
+  align-items: center;
+  padding: 0px 50px 0px 30px;
+}
+.price__text span {
+  padding: 8px 16px;
+  border-radius: 60px;
+  background-color: #ECEEF3;
+}
+.price__text span.price__text_orange {
+  background-color: var(--orange);
+  color: #fff;
+  font-weight: 500;
+}
+.price__text::before {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ECEEF3;
+}
+.price__text::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0;
+  height: 100%;
+  width: 1px;
+  background-color: #ECEEF3;
+}
+.price__swiper .price__item:last-child .price__text::after{
+  display: none;
+}
+.price__swiper .price__item:last-child .price__label::after{
+  display: none;
 }
 .price__swiper {
 }
@@ -831,4 +880,16 @@ a {
 .swiper-wrapper {
 }
 .swiper-slide {
+}
+.price__caption {
+  margin: 0px -20px;
+  padding: 17px 30px 0px 30px;
+}
+.price__caption span {
+  font-weight: 200;
+  font-size: 10px;
+  display: inline-block;
+  max-width: 440px;
+  padding: 0px 20px;
+  line-height: 1.2;
 }
