@@ -27,7 +27,8 @@ new Swiper(".price__swiper", {
     enabled: true,
     breakpoints: {
         851: {
-            enabled: false 
+            enabled: false,
+            spaceBetween: 0,
         }
     },
     on: {
