@@ -768,6 +768,10 @@ a {
   padding: 72px 0px 0px 0px;
 }
 .price__wrapper {
+ 
+}
+.price__swiper.swiper {
+  margin-left: 0;
 }
 .wrapper {
 }

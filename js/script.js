@@ -20,7 +20,7 @@ new Swiper(".firstscreen__swiper", {
 });
 new Swiper(".price__swiper", {
     slidesPerView: "auto", // Слайды не сжимаются
-    spaceBetween: 5, // Отступы между слайдами
+    spaceBetween: 0, // Отступы между слайдами
     freeMode: true, // Включаем свободный режим
     freeModeSticky: false, // Отключаем "прилипание" слайдов
     grabCursor: true, // Делаем курсор "рукой"
