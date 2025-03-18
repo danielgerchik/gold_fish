@@ -185,6 +185,11 @@ a {
     transform: translateY(50%) rotate(-45deg);
     bottom: 50%;;
   }
+  @media screen and (min-width: 1241px) {
+    .header {
+      height: 127px;
+    }
+  }
   @media screen and (max-width: 1240px) {
     .header {
       padding: 20px 0px;

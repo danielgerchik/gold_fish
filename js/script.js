@@ -1,4 +1,4 @@
-// swiper 
+    // swiper 
 new Swiper(".firstscreen__swiper", {
     slidesPerView: "auto", // Слайды не сжимаются
     spaceBetween: 0, // Отступы между слайдами
@@ -135,4 +135,5 @@ document.querySelectorAll('.header__list-item a').forEach(anchor => {
 
       }
     });
-  });
+  });    
+
