@@ -1,9 +1,3 @@
-const burger = document.querySelector('.header__burger');
-const menu = document.querySelector('.header__menu');
-burger.addEventListener('click', () => {
-  burger.classList.toggle('active');
-  menu.classList.toggle('active');
-});
 // swiper 
 new Swiper(".firstscreen__swiper", {
     slidesPerView: "auto", // Слайды не сжимаются
@@ -60,23 +54,6 @@ popup.addEventListener("click", (e) => {
     }
 });
 
-// ScrollTO
-document.querySelectorAll('.header__list-item a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      burger.classList.remove('active');
-      menu.classList.remove('active');
-      const targetId = this.getAttribute('href').substring(1);
-      const targetElement = document.getElementById(targetId);
-      
-      if (targetElement) {
-        window.scrollTo({
-          top: targetElement.offsetTop,
-          behavior: 'smooth'
-        });
-      }
-    });
-  });
   
 // Header
 
@@ -110,3 +87,52 @@ window.addEventListener("scroll", () => {
 
     lastScrollTop = window.scrollY;
 });
+
+// Burger
+
+const htmlElement = document.querySelector('html');
+const burger = document.querySelector('.header__burger');
+const menu = document.querySelector('.header__menu');
+
+function removeBurger(e) {
+    if (!header.contains(e.target)) {
+        htmlElement.classList.remove('lock'); 
+        burger.classList.remove('active');
+        menu.classList.remove('active');
+        document.removeEventListener('click', removeBurger);
+    }
+}
+
+burger.addEventListener('click', () => {
+    htmlElement.classList.toggle('lock');
+    burger.classList.toggle('active');
+    menu.classList.toggle('active');
+    document.addEventListener('click', removeBurger);
+});
+
+// ScrollTO
+document.querySelectorAll('.header__list-item a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      htmlElement.classList.remove('lock'); 
+      burger.classList.remove('active');
+      menu.classList.remove('active');
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      
+      if (targetElement) {
+        if (targetElement.offsetTop < window.scrollY) {
+            window.scrollTo({
+                top: targetElement.offsetTop - headerHeight,
+                behavior: 'smooth'
+              });
+        } else {
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+              });
+        }
+
+      }
+    });
+  });
