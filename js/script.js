@@ -78,3 +78,35 @@ document.querySelectorAll('.header__list-item a').forEach(anchor => {
     });
   });
   
+// Header
+
+let lastScrollTop = 0;
+const header = document.querySelector(".header");
+const mainBlock = document.querySelector("main");
+const headerHeight = header.offsetHeight;
+mainBlock.style.paddingTop = headerHeight + "px";
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > headerHeight) {
+        header.style.position = `fixed`;
+        if (window.scrollY > lastScrollTop) {
+            // Скроллим вниз — скрываем шапку
+            header.style.transform = `translateY(-100%)`;
+        } else {
+            // Скроллим вверх — показываем шапку
+            header.style.transition = `0.3s ease-in-out 0s`;
+            header.style.transform = `translateY(0)`;
+        }
+    } 
+    if(window.scrollY === 0) {
+        setTimeout(() => {
+            if(window.scrollY === 0) {
+                header.style.position = `absolute`;
+                header.style.transition = `none`;
+            }
+        }, 300);
+    }
+
+    lastScrollTop = window.scrollY;
+});
