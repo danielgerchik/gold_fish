@@ -114,19 +114,22 @@ a {
   }
   .header__contacts {
     display: flex;
-    align-items: center;
+    align-items: stretch;
   }
   .header__contacts-item:not(:last-child) {
     margin-right: 8px;
   }
   .header__contacts-link {
     transition: .3s ease 0s;
+    height: 100%;
+    display: flex;
   }
   .header__contacts-link:hover {
     opacity: 0.7;
   }
   .header__contacts-link-tel {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     padding: 13px 18px;
     background-color: var(--orange);
     border-radius: 60px;
