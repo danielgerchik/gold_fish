@@ -667,6 +667,14 @@ a {
   padding: 20px;
 }
 .about__item-wrap.about__item-wrap-big .about__item {
+  padding: 20px;
+}
+}
+@media screen and (max-width: 340px) {
+.about__item-wrap.about__item-wrap-small .about__item {
+  padding: 15px;
+}
+.about__item-wrap.about__item-wrap-big .about__item {
   padding: 15px;
 }
 }
