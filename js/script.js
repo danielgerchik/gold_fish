@@ -106,9 +106,9 @@ function removeBurger(e) {
 }
 
 burger.addEventListener('click', () => {
-    htmlElement.classList.toggle('lock');
     burger.classList.toggle('active');
     menu.classList.toggle('active');
+    htmlElement.classList.toggle('lock');
     document.addEventListener('click', removeBurger);
 });
 

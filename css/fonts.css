@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: "Unbounded";
     src: url("../fonts/Unbounded-Bold.woff2"), url("../fonts/Unbounded-Bold.woff");
     font-weight: 700;
@@ -42,6 +42,13 @@
     font-family: "Unbounded";
     src: url("../fonts/Unbounded-ExtraLight.woff2"), url("../fonts/Unbounded-ExtraLight.woff");
     font-weight: 200;
+    font-display: swap;
+    font-style: normal;
+  } */
+  @font-face {
+    font-family: "Bounded";
+    src: url("../fonts/test/Bounded-Variable.woff2"), url("../fonts/test/Bounded-Variable.woff");
+    font-weight: 100 900;
     font-display: swap;
     font-style: normal;
   }

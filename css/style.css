@@ -6,7 +6,7 @@ html,body {
   width: 100vw; 
 }
 body {
-  font-family: "Unbounded";
+  font-family: "Bounded";
   font-weight: 400;
   font-size: 14px;
   color: #fff;
@@ -24,6 +24,8 @@ a {
     text-decoration: none;
   }
   .btn {
+    font-family: "Bounded";
+    font-weight: 500;
     cursor: pointer;
     border: none;
     background-color: transparent;
@@ -308,8 +310,6 @@ a {
   .firstscreen__button {
     position: relative;
     z-index: 10;
-    font-family: "Unbounded";
-    font-weight: 500;
     font-size: 24px;
     color: #fff;
     padding: 10px 30px;
@@ -1139,7 +1139,6 @@ a {
   font-size: 32px; 
 }
 .contacts__order-btn {
-  font-weight: 500;
   font-size: 32px;
   padding: 17.5px 35px;
   background-color: var(--orange);
@@ -1152,6 +1151,7 @@ a {
   opacity: .7;
 }
 .btn {
+  
 }
 @media screen and (max-width: 1023px) {
   .contacts__item a span {
@@ -1161,7 +1161,7 @@ a {
   font-size: 30px;
 }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 580px) {
   .contacts__item {
     flex-wrap: wrap;
   }
@@ -1176,7 +1176,7 @@ a {
   margin-left: 0px;
 }
 }
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 580px) {
   .contacts__item a span {
     font-size: 6vw;
 }
@@ -1186,7 +1186,7 @@ a {
 .contacts__order-btn {
   padding: 17.5px 15px;
   width: 100%;
-  font-size: 6vw;
+  font-size: 5vw;
 }
 }
 @media screen and (max-width: 374px) {
