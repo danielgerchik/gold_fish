@@ -781,7 +781,7 @@ a {
  
 }
 .price__swiper.swiper {
-  margin-left: 0;
+  width: 100%;
 }
 .wrapper {
 }
@@ -851,6 +851,8 @@ a {
   padding: 8px 16px;
   border-radius: 60px;
   background-color: #ECEEF3;
+  line-height: 1.15;
+  text-align: center;
 }
 .price__text span.price__text_orange {
   background-color: var(--orange);
