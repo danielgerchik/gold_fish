@@ -20,16 +20,18 @@ new Swiper(".price__swiper", {
     grabCursor: true, // Делаем курсор "рукой"
     enabled: true,
     breakpoints: {
+        0: {
+            slidesOffsetBefore: 150,
+        },
+        501: {
+            slidesOffsetBefore: 210,
+        },
         851: {
             enabled: false,
             spaceBetween: 0,
+            slidesOffsetBefore: 0,
         }
     },
-    on: {
-        setTranslate(swiper, translate) {
-          swiper.wrapperEl.style.transform = `translate3d(${translate + 10}px, 0px, 0px)`;
-        }
-      }
 });
 // popup
 const popup = document.querySelector(".order-popup");

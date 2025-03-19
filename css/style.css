@@ -943,6 +943,11 @@ a {
 }
 }
 @media screen and (max-width: 850px) {
+  .price__items {
+    position: relative;
+    display: block;
+  }
+  
   .price__bot-text {
     font-size: 13px;
 }
@@ -1015,6 +1020,9 @@ a {
   border-bottom-left-radius: 0px;
   margin-right: 0px;
   padding-left: 50px;
+  position: absolute;
+  z-index: 10;
+  width: 200px;
 }
 .price__item_static .price__text  {
   color: #fff;
@@ -1022,15 +1030,15 @@ a {
   padding: 0px 5px 0px 0px;
 }
 .price__item_static .price__text span {
-  margin-top: 6px;
   font-size: 11px;
+  transform: translateY(2px);
 }
 .price__item_static .price__label  {
   text-align: left;
   padding: 0px 5px 0px 0px;
 }
 .price__swiper-wrapper {
-  transform: translate3d(10px, 0px, 0px);
+  /* transform: translate3d(230px, 0px, 0px); */
 }
 .price__swiper .price__item {
   flex: 1 0 40%;
@@ -1038,7 +1046,7 @@ a {
 }
 @media screen and (max-width: 700px) {
   .price__swiper .price__item {
-    flex: 1 0 60%;
+    flex: 1 0 45%;
   }
 }
 @media screen and (max-width: 500px) {
@@ -1050,6 +1058,7 @@ a {
   }
   .price__item_static {
     padding-left: 15px;
+    width: 140px;
 }
 .price__label {
   padding: 0px 10px 0px 10px;
@@ -1061,7 +1070,7 @@ a {
   font-size: 15px;
 }
 .price__swiper .price__item {
-  flex: 1 0 85%;
+  flex: 1 0 52%;
 }
 }
 @media screen and (max-width: 380px) {
@@ -1076,6 +1085,9 @@ a {
   }
   .price__item_static .price__text {
     font-size: 15px;
+  }
+  .price__swiper .price__item {
+    flex: 1 0 65%;
   }
 }
 /* Contacts */
