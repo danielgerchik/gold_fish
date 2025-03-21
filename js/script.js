@@ -142,7 +142,7 @@ document.querySelectorAll('.header__list-item a').forEach(anchor => {
 // Text-change
 
 
-if (window.innerWidth < 601) {
+if (window.innerWidth < 751) {
     const aboutLabels = document.querySelectorAll(".about__label");
 
 aboutLabels.forEach(label => {
@@ -153,6 +153,15 @@ aboutLabels.forEach(label => {
         }
     })
 })
+
+aboutTexts = document.querySelectorAll(".about__text")
+
+aboutTexts.forEach(text => {
+    if(text.hasAttribute("data-text")) {
+        text.textContent = text.getAttribute("data-text");
+    }
+})
+
 } 
 
 
