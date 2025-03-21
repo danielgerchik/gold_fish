@@ -1467,18 +1467,18 @@ padding: 15px;
 }
 
 @media screen and (max-width: 390px) {
-  .about__item-wrap.about__item-wrap-big .about__item {
-    padding: 15px 6px 20px 6px;
-}
-.about__item-wrap.about__item-wrap-small .about__item {
-  padding: 15px 6px 20px 6px;
-}
 .about__label {
   font-size: 13px;
 }
 }
 
 @media screen and (max-width: 374px) {
+  .about__item-wrap.about__item-wrap-big .about__item {
+    padding: 15px 6px 20px 6px;
+}
+.about__item-wrap.about__item-wrap-small .about__item {
+  padding: 15px 6px 20px 6px;
+}
   .wrapper {
     padding: 0 10px;
 }
