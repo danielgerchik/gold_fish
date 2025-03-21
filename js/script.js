@@ -139,6 +139,23 @@ document.querySelectorAll('.header__list-item a').forEach(anchor => {
     });
   });    
 
+// Text-change
+
+
+if (window.innerWidth < 601) {
+    const aboutLabels = document.querySelectorAll(".about__label");
+
+aboutLabels.forEach(label => {
+    const labelSpans = Array.from(label.children).filter(child => child.tagName === "SPAN")
+    labelSpans.forEach(span => {
+        if(span.hasAttribute("data-text")) {
+            span.textContent = span.getAttribute("data-text");
+        }
+    })
+})
+} 
+
+
 // Highliting-box
 
 const highlitingBoxes = document.querySelectorAll(".highliting-box");
