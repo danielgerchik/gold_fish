@@ -139,3 +139,39 @@ document.querySelectorAll('.header__list-item a').forEach(anchor => {
     });
   });    
 
+// Highliting-box
+
+const highlitingBoxes = document.querySelectorAll(".highliting-box");
+
+highlitingBoxes.forEach(box => {
+    const highlitingBoxesSpans = Array.from(box.children).filter(child => child.tagName === "SPAN");
+
+    let LastSpan = null;
+
+    let translateYValue = 5;
+    let SpanTranslateY = 0
+
+for (let index = 0; index < highlitingBoxesSpans.length; index++) {
+
+    let highlitingSpan = highlitingBoxesSpans[index];
+
+    if(index !== 0) {
+        SpanTranslateY = SpanTranslateY + translateYValue;
+        highlitingSpan.style.transform = `translateY(-${SpanTranslateY}px)`;
+        if(highlitingSpan.offsetWidth > LastSpan.offsetWidth) {
+            highlitingSpan.classList.add("wider-last")
+            LastSpan.classList.add("shorter-next")
+        } else {
+            highlitingSpan.classList.add("shorter-last")
+            LastSpan.classList.add("wider-next")
+        }
+    }
+
+
+    LastSpan = highlitingSpan;
+
+    
+}
+})
+
+

@@ -575,11 +575,22 @@ a {
   border-radius: 10px;
   background: url(../img/about/items/text_bg/05_min.svg) center / cover no-repeat;
 }
-/* .about__item-wrap.about__item-wrap-big:nth-child(1) .about__item .about__label_min {
+.about__item-wrap.about__item-wrap-big:nth-child(1) .about__item .about__label_min {
   background-color: transparent;
   border-radius: 10px;
-  background: url(../img/about/items/text_bg/01_min.svg) center / cover no-repeat;
-} */
+}
+.about__item-wrap.about__item-wrap-big:nth-child(1) .about__item .about__label_min span {
+
+}
+.about__item-wrap.about__item-wrap-big:nth-child(1) .about__item .about__label_min span:first-of-type {
+
+}
+.about__item-wrap.about__item-wrap-big:nth-child(1) .about__item .about__label_min span:nth-of-type(2) {
+
+}
+.about__item-wrap.about__item-wrap-big:nth-child(1) .about__item .about__label_min span {
+  
+}
 .about__text {
   position: relative;
   z-index: 5;
@@ -1380,4 +1391,28 @@ padding: 15px;
 }
 .footer__content a:hover {
   opacity: .7;
+}
+
+/* Highliting-box */
+
+.highliting-box span {
+  display: inline-block;
+  background-color: var(--orange);
+  padding: 0px 5px 5px 5px;
+  border-radius: 0px;
+}
+.highliting-box span:first-of-type {
+  padding-top: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.highliting-box span:last-of-type {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.highliting-box span.wider-last {
+  border-top-right-radius: 5px;
+}
+.highliting-box span.wider-next {
+  border-bottom-right-radius: 5px;
 }
