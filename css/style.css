@@ -565,9 +565,6 @@ a {
   margin-bottom: 15px;
   line-height: 1.4;
 }
-.about__item-wrap:first-child .about__label span:last-of-type {
-  display: none;
-}
 .about__bg-img-min {
   display: none;
 }
@@ -669,9 +666,6 @@ a {
     min-height: auto;
     height: clamp(196px, 35vw, 250px);
   }
-  .about__item-wrap:first-child .about__label span:last-of-type {
-    display: inline-block;
-  }
 }
 @media screen and (max-width: 750px) {
   .about__item-wrap:nth-child(1) .about__bg-img { 
@@ -734,6 +728,9 @@ padding: 15px;
 }
 }
 @media screen and (max-width: 600px) {
+  .about__label {
+    margin-bottom: 8px;
+  }
   .about__item-wrap.about__item-wrap-big .about__item {
     padding: 10px;
     padding-bottom: 15px;
@@ -747,18 +744,6 @@ padding: 15px;
 }
 .highliting-box span:first-of-type {
   padding-top: 5px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-.highliting-box span:last-of-type {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-.highliting-box span.wider-last {
-  border-top-right-radius: 5px;
-}
-.highliting-box span.wider-next {
-  border-bottom-right-radius: 5px;
 }
 .about__item-wrap {
   margin-bottom: 8px;
@@ -766,6 +751,20 @@ padding: 15px;
 }
 .about__items {
   margin: 0px -4px;
+}
+.highliting-box span:first-of-type {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.highliting-box span:last-of-type {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.highliting-box span.wider-last {
+  border-top-right-radius: 8px;
+}
+.highliting-box span.wider-next {
+  border-bottom-right-radius: 8px;
 }
 }
 @media screen and (max-width: 550px) {
@@ -1456,3 +1455,44 @@ padding: 15px;
   opacity: .7;
 }
 
+@media screen and (max-width: 387px) {
+  .about__item-wrap.about__item-wrap-big .about__item {
+    padding: 15px 6px 20px 6px;
+}
+.about__item-wrap.about__item-wrap-small .about__item {
+  padding: 15px 6px 20px 6px;
+}
+.about__label {
+  font-size: 13.5px;
+}
+}
+
+@media screen and (max-width: 374px) {
+  .wrapper {
+    padding: 0 10px;
+}
+.about__label {
+  font-size: 12px;
+}
+.highliting-box span {
+  padding: 0px 2px 2px 2px;
+}
+.highliting-box span:first-of-type {
+  padding-top: 2px;
+}
+
+.highliting-box span:first-of-type {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.highliting-box span:last-of-type {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.highliting-box span.wider-last {
+  border-top-right-radius: 5px;
+}
+.highliting-box span.wider-next {
+  border-bottom-right-radius: 5px;
+}
+}

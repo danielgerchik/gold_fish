@@ -163,6 +163,17 @@ aboutTexts.forEach(text => {
 })
 
 } 
+// Text-change(span around words)
+
+if (window.innerWidth < 751) {
+    const element = document.querySelector(".about__label");
+    const words = element.children[0].textContent.match(/\S+/g) || []; // Разбиваем текст на слова
+    
+    const spannedText = words.map(word => `<span>${word}</span>`).join("<br>"); // Оборачиваем слова в <span> и соединяем <br>
+    
+    element.innerHTML = spannedText; // Заменяем содержимое
+}
+
 
 
 // Highliting-box
@@ -180,7 +191,10 @@ highlitingBoxes.forEach(box => {
 
     if (window.innerWidth > 600) {
         translateYValue = 10;
-    } else {
+    } else if (window.innerWidth < 375) {
+        translateYValue = 2;
+    }
+     else {
         translateYValue = 5;
     }
 
