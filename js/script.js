@@ -148,12 +148,24 @@ highlitingBoxes.forEach(box => {
 
     let LastSpan = null;
 
-    let translateYValue = 5;
+    let translateYValue = 0;
+
     let SpanTranslateY = 0
+
+    if (window.innerWidth > 600) {
+        translateYValue = 10;
+    } else {
+        translateYValue = 5;
+    }
+
+    
+
+   
 
 for (let index = 0; index < highlitingBoxesSpans.length; index++) {
 
     let highlitingSpan = highlitingBoxesSpans[index];
+
 
     if(index !== 0) {
         SpanTranslateY = SpanTranslateY + translateYValue;
@@ -166,6 +178,11 @@ for (let index = 0; index < highlitingBoxesSpans.length; index++) {
             LastSpan.classList.add("wider-next")
         }
     }
+
+    if(index + 1 === highlitingBoxesSpans.length) {
+        box.style.height = `${box.offsetHeight - SpanTranslateY}px`
+    }
+
 
 
     LastSpan = highlitingSpan;
