@@ -1466,7 +1466,7 @@ padding: 15px;
   opacity: .7;
 }
 
-@media screen and (max-width: 387px) {
+@media screen and (max-width: 390px) {
   .about__item-wrap.about__item-wrap-big .about__item {
     padding: 15px 6px 20px 6px;
 }
