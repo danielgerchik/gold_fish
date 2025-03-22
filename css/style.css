@@ -1466,7 +1466,7 @@ padding: 15px;
   opacity: .7;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 386px) {
 .about__label {
   font-size: 13px;
 }
