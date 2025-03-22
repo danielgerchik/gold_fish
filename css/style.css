@@ -118,6 +118,7 @@ a {
     align-items: center;
     padding: 10px 40px;
     border-radius: 60px;
+    height: 50px;
   }
   .header__list-contacts-link span {
     line-height: 1.15;
