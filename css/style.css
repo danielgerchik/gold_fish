@@ -683,12 +683,11 @@ a {
   .about__item {
     border-radius: 25px;
 }
-.about__item-wrap.about__item-wrap-small:nth-child(2) .about__item .about__label {
+/* .about__item-wrap.about__item-wrap-small:nth-child(2) .about__item .about__label {
   margin-bottom: 10px;
-}
+} */
 .about__text {
-  font-size: 9px;
-  font-size: clamp(9px, 1.8vw, 14px);
+  font-size: clamp(10px, 1.8vw, 14px);
 }
   .about__item-wrap:nth-child(2) .about__bg-img.about__bg-img-2-big {
       display: none;
@@ -729,6 +728,9 @@ padding: 15px;
 }
 @media screen and (max-width: 600px) {
   .about__label {
+    margin-bottom: 8px;
+  }
+  .about__item-wrap.about__item-wrap-small:nth-child(2) .about__item .about__label {
     margin-bottom: 8px;
   }
   .about__item-wrap.about__item-wrap-big .about__item {
