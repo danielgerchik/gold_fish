@@ -1510,6 +1510,6 @@ padding: 15px;
 
 @media screen and (min-width: 375px) and (max-width: 381px) {
   .firstscreen__label {
-    font-size: 15.5px;
+    font-size: 15px;
 }
 }
