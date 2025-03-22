@@ -185,18 +185,19 @@ highlitingBoxes.forEach(box => {
 
     let LastSpan = null;
 
-    let translateYValue = 0;
+    let translateYValue = 10;
 
     let SpanTranslateY = 0
 
-    if (window.innerWidth > 600) {
-        translateYValue = 10;
-    } else if (window.innerWidth < 375) {
-        translateYValue = 2;
+    if(!box.classList.contains("firstscreen__label")) {
+        if (window.innerWidth < 375) {
+            translateYValue = 2;
+        } else if (window.innerWidth > 374 && window.innerWidth < 601) { 
+            translateYValue = 5;
+         }
     }
-     else {
-        translateYValue = 5;
-    }
+
+     
 
     
 
