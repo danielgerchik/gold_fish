@@ -125,6 +125,7 @@ a {
   }
   .header__list-contacts-link-tel {
     background-color: var(--orange);
+    font-size: 15px;
   }
   .header__list-contacts-link-wh {
     background-color: #05CE7C;
