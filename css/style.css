@@ -889,6 +889,9 @@ padding: 15px;
 .about__item-wrap.about__item-wrap-small .about__item {
   padding: 15px 6px 20px 10px;
 }
+.about__item-wrap:first-child .about__text {
+  max-width: 155px;
+}
 }
 @media screen and (max-width: 380px) {
   .about__title {
