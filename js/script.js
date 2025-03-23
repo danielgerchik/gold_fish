@@ -174,7 +174,18 @@ if (window.innerWidth < 751) {
     element.innerHTML = spannedText; // Заменяем содержимое
 }
 
+// Prepositions 
 
+
+let prepositions = ["в", "на", "с", "за", "по", "о", "к", "у", "и", "а"]; // Список предлогов
+let texts = document.querySelectorAll(".text");
+
+texts.forEach((t) => {
+  t.innerHTML = t.innerHTML.replace(
+    new RegExp(`\\s(${prepositions.join("|")})\\s(\\S+)`, "gi"),
+    " $1&nbsp;$2"
+  );
+});
 
 // Highliting-box
 
@@ -196,12 +207,6 @@ highlitingBoxes.forEach(box => {
             translateYValue = 5;
          }
     }
-
-     
-
-    
-
-   
 
 for (let index = 0; index < highlitingBoxesSpans.length; index++) {
 
