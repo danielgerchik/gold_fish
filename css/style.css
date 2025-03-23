@@ -1093,7 +1093,7 @@ padding: 15px;
   padding: 0px 50px 0px 30px;
   display: flex;
   align-items: center;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 .price__table::before {
   content: "";
@@ -1285,7 +1285,7 @@ padding: 15px;
 .price__label {
   justify-content: center;
   text-align: center;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 .price__text {
   color: var(--black);
