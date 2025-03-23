@@ -977,6 +977,7 @@ padding: 15px;
   align-items: center;
   padding: 20px 30px;
   border-radius: 60px;
+  height: 72px;
 }
 .order-popup__item:first-child .order-popup__link {
   background-color: var(--orange);
@@ -1011,6 +1012,10 @@ padding: 15px;
 .order-popup__link {
   font-size: 16px;
   padding: 15px 25px;
+  height: 62px;
+}
+.order-popup__link img {
+  margin-right: 15px;
 }
 }
 @media screen and (max-width: 400px) {
@@ -1034,6 +1039,12 @@ padding: 15px;
 @media screen and (max-width: 374px) {
   .order-popup__exit-img {
     right: 30px;
+}
+.order-popup__link {
+  font-size: 15px;
+}
+.order-popup__link img {
+  width: 16%;
 }
 }
 /* Bottom */
