@@ -1445,12 +1445,8 @@ padding: 15px;
 .footer__content span:last-of-type{
   margin-bottom: 24px;
 }
-.footer__content a {
-  align-self: flex-start;
-  transition: .3s ease 0s;
-}
-.footer__content a:hover {
-  opacity: .7;
+.footer__content img {
+  width: 38px;
 }
 
 @media screen and (max-width: 386px) {
