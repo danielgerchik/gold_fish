@@ -40,7 +40,10 @@ a {
 .highliting-box span {
   display: inline-block;
   background-color: var(--orange);
-  padding: 0px 10px 10px 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 6px;
+  padding-top: 5px;
   border-radius: 0px;
 }
 .highliting-box span:first-of-type {
@@ -49,6 +52,7 @@ a {
   border-top-right-radius: 10px;
 }
 .highliting-box span:last-of-type {
+  padding-bottom: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -57,6 +61,19 @@ a {
 }
 .highliting-box span.wider-next {
   border-bottom-right-radius: 10px;
+}
+/**/
+.highliting-box.firstscreen__label span {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 4px;
+  padding-top: 3px;
+}
+.highliting-box.firstscreen__label span:first-of-type {
+  padding-top: 6px;
+}
+.highliting-box.firstscreen__label span:last-of-type {
+  padding-bottom: 6px;
 }
   /* Header */
 
@@ -372,7 +389,7 @@ a {
     font-weight: 500;
     font-size: 16px;
     margin-bottom: 15px;
-    line-height: 1.2;
+    line-height: 1.45;
   }
   .firstscreen__label span {
     display: inline-block;
@@ -749,46 +766,27 @@ padding: 15px;
 .about__items {
   margin: 0px -4px;
 }
-.highliting-box span {
-  padding: 0px 5px 5px 5px;
+.highliting-box.about__label span {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 3px;
+  padding-top: 2.5px;
 }
-.highliting-box span:first-of-type {
+.highliting-box.about__label span:first-of-type {
   padding-top: 5px;
-}
-.highliting-box span:first-of-type {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
-.highliting-box span:last-of-type {
+.highliting-box.about__label span:last-of-type {
+  padding-bottom: 6px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
-.highliting-box span.wider-last {
+.highliting-box.about__label span.wider-last {
   border-top-right-radius: 8px;
 }
-.highliting-box span.wider-next {
+.highliting-box.about__label span.wider-next {
   border-bottom-right-radius: 8px;
-}
-/*firstscreen__label */
-.highliting-box.firstscreen__label span {
-  padding: 0px 10px 10px 10px;
-}
-.highliting-box.firstscreen__label span:first-of-type {
-  padding-top: 10px;
-}
-.highliting-box.firstscreen__label span:first-of-type {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-.highliting-box.firstscreen__label span:last-of-type {
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-.highliting-box.firstscreen__label span.wider-last {
-  border-top-right-radius: 10px;
-}
-.highliting-box.firstscreen__label span.wider-next {
-  border-bottom-right-radius: 10px;
 }
 
 }
@@ -1524,47 +1522,27 @@ padding: 15px;
 .about__label {
   font-size: 12px;
 }
-.highliting-box span {
-  padding: 0px 2px 2px 2px;
+.highliting-box.about__label span {
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 1px;
+  padding-bottom: 1.5px;
 }
-.highliting-box span:first-of-type {
+.highliting-box.about__label span:first-of-type {
   padding-top: 2px;
-}
-
-.highliting-box span:first-of-type {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-.highliting-box span:last-of-type {
+.highliting-box.about__label span:last-of-type {
+  padding-bottom: 2px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-.highliting-box span.wider-last {
+.highliting-box.about__label span.wider-last {
   border-top-right-radius: 5px;
 }
-.highliting-box span.wider-next {
+.highliting-box.about__label span.wider-next {
   border-bottom-right-radius: 5px;
-}
-/*firstscreen__label */
-.highliting-box.firstscreen__label span {
-  padding: 0px 10px 10px 10px;
-}
-.highliting-box.firstscreen__label span:first-of-type {
-  padding-top: 10px;
-}
-.highliting-box.firstscreen__label span:first-of-type {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-.highliting-box.firstscreen__label span:last-of-type {
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-.highliting-box.firstscreen__label span.wider-last {
-  border-top-right-radius: 10px;
-}
-.highliting-box.firstscreen__label span.wider-next {
-  border-bottom-right-radius: 10px;
 }
 }
 
