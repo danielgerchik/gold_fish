@@ -134,7 +134,16 @@ a {
     height: 50px;
   }
   .header__list-contacts-link span {
+    position: relative;
     line-height: 1.15;
+    padding-left: 53px;
+  }
+  .header__list-contacts-link img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 20px;
   }
   .header__list-contacts-link-tel {
     background-color: var(--orange);
@@ -148,9 +157,6 @@ a {
   }
   .header__list-contacts-link-mail {
     background-color: #fff;
-  }
-  .header__list-contacts-link img {
-    margin-right: 20px;
   }
   .header__list-contacts-link:hover {
     opacity: 0.7;
@@ -944,6 +950,10 @@ padding: 15px;
   padding: 20px 30px;
   border-radius: 60px;
   height: 72px;
+  transition: .3s ease 0s;
+}
+.order-popup__link:hover {
+  opacity: .7;
 }
 .order-popup__item:first-child .order-popup__link {
   background-color: var(--orange);
@@ -958,8 +968,15 @@ padding: 15px;
   background-color: #F2F4F9;
   color: var(--black);
 }
+.order-popup__link span {
+  position: relative;
+  padding-left: 58px;
+}
 .order-popup__link img {
-  margin-right: 20px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 @media screen and (max-width: 850px) {
   .order-popup__content {
@@ -982,6 +999,9 @@ padding: 15px;
 }
 .order-popup__link img {
   margin-right: 15px;
+}
+.order-popup__link span {
+  padding-left: 53px;
 }
 }
 @media screen and (max-width: 400px) {
@@ -1482,6 +1502,11 @@ padding: 15px;
 }
 }
 @media screen and (min-width: 851px) and (max-width: 886px) {
+  .firstscreen__label {
+    font-size: 15px;
+}
+}
+@media screen and (width: 320px) {
   .firstscreen__label {
     font-size: 15px;
 }
